@@ -1,0 +1,11 @@
+apiVersion: environment.cloudbees.com/v1alpha1
+kind: GitRepository
+metadata:
+  name: cloudbeestest0-insurance-frontend                             
+  namespace: previews
+spec:
+  url: https://github.com/CloudBeesTest0/insurance-frontend.git
+  apiTokenSecretRef:
+    name: beedemo-dev-github-token
+  autoUpdateContexts:                           
+  - default
